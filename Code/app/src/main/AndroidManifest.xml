@@ -3,6 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.abhishek.mindspace">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission
+        android:name="android.permission.PACKAGE_USAGE_STATS"
+        tools:ignore="ProtectedPermissions" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,6 +19,42 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MindSpace"
         tools:targetApi="31">
+        <activity
+            android:name=".ActivityAddictionVideo"
+            android:exported="false" />
+        <activity
+            android:name=".ActivtySleepMusic"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityMusic"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityLogin"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityResult"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityTest"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityMeditationTutorial"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityMeditation"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityDetoxYogaList"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityDetoxYoga"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityDetoxVideo"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityVideos"
+            android:exported="false" />
         <activity
             android:name=".SplashScreen"
             android:exported="true">
@@ -41,9 +83,7 @@
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.MindSpace.NoActionBar">
-
-        </activity>
+            android:theme="@style/Theme.MindSpace.NoActionBar" />
 
         <meta-data
             android:name="preloaded_fonts"

@@ -20,7 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
 
-            android:background="@drawable/backo"
+            android:background="@drawable/back"
 
             >
 
@@ -82,7 +82,7 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/backo">
+                android:background="@drawable/backs">
 
                 <ImageView
                     android:id="@+id/logo_music"
@@ -126,7 +126,7 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/backo">
+                android:background="@drawable/backs">
 
                 <ImageView
                     android:id="@+id/logo_progress"

@@ -20,16 +20,16 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/backo"
+            android:background="@drawable/back"
 
             >
 
             <ImageView
                 android:id="@+id/imageView2"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
-                android:layout_marginTop="100dp"
-                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="80dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/rubik" />
@@ -38,14 +38,48 @@
                 android:id="@+id/textView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
                 android:fontFamily="@font/comic_neue_bold"
                 android:text="Brain Games"
                 android:textColor="#FFFFFF"
                 android:textSize="32sp"
                 android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="@+id/imageView2"
-                app:layout_constraintStart_toStartOf="@+id/imageView2"
-                app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+                app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+                app:layout_constraintStart_toEndOf="@+id/imageView2"
+                app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+            <TextView
+                android:id="@+id/quote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/comic_neue_bold"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text='"For one who has conquered the mind, the mind is the best of friends. But for one who has failed to do so, his very mind will be the greatest enemy."'
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+            <TextView
+                android:id="@+id/quoteBy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/comic_neue_bold"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text='Fun Fact'
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/quote"
+                app:layout_constraintTop_toBottomOf="@+id/quote" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 
@@ -78,7 +112,7 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/backo">
+                android:background="@drawable/backs">
 
                 <ImageView
                     android:id="@+id/logo_timer"
@@ -111,50 +145,6 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardView2"
-            android:layout_width="130dp"
-            android:layout_height="130dp"
-            android:layout_margin="20dp"
-            android:backgroundTint="@color/main"
-            app:cardCornerRadius="10dp"
-            app:cardElevation="5dp">
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/backo">
-
-                <ImageView
-                    android:id="@+id/logo_analytics"
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_marginTop="20dp"
-                    android:src="@drawable/thought"
-                    app:layout_column="5"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_row="0" />
-
-                <TextView
-                    android:id="@+id/head_addict"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/comic_neue_bold"
-                    android:text="Control"
-                    android:textColor="#FFFFFF"
-                    android:textSize="22sp"
-                    android:textStyle="bold"
-                    app:layout_column="0"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="@+id/logo_analytics"
-                    app:layout_constraintStart_toStartOf="@+id/logo_analytics"
-                    app:layout_constraintTop_toBottomOf="@+id/logo_analytics"
-                    app:layout_row="0" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
             android:id="@+id/cardView3"
             android:layout_width="130dp"
             android:layout_height="130dp"
@@ -166,7 +156,7 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/backo">
+                android:background="@drawable/backs">
 
                 <ImageView
                     android:id="@+id/logo_music"
@@ -210,7 +200,7 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/backo">
+                android:background="@drawable/backs">
 
                 <ImageView
                     android:id="@+id/logo_progress"
@@ -238,6 +228,50 @@
                     app:layout_constraintEnd_toEndOf="@+id/logo_progress"
                     app:layout_constraintStart_toStartOf="@+id/logo_progress"
                     app:layout_constraintTop_toBottomOf="@+id/logo_progress"
+                    app:layout_row="0" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_margin="20dp"
+            android:backgroundTint="@color/main"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/backs">
+
+                <ImageView
+                    android:id="@+id/logo_analytics"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/thought"
+                    app:layout_column="5"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_row="0" />
+
+                <TextView
+                    android:id="@+id/head_addict"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comic_neue_bold"
+                    android:text="Control"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    app:layout_column="0"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/logo_analytics"
+                    app:layout_constraintStart_toStartOf="@+id/logo_analytics"
+                    app:layout_constraintTop_toBottomOf="@+id/logo_analytics"
                     app:layout_row="0" />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>

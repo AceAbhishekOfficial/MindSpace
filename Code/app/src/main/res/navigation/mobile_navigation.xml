@@ -14,12 +14,12 @@
     <fragment
         android:id="@+id/nav_settings"
         android:name="com.abhishek.mindspace.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
+        android:label="Settings"
         tools:layout="@layout/fragment_gallery" />
 
     <fragment
         android:id="@+id/nav_logout"
         android:name="com.abhishek.mindspace.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
+        android:label="Logout"
         tools:layout="@layout/fragment_slideshow" />
 </navigation>
